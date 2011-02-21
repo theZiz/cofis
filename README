@@ -1,0 +1,21 @@
+COFIS - Cluster Observer Filesystem
+- a FUSE-Filesystem for observering cluster stats
+
+Licenses: MPL and (L)GPL
+Author: Alexander Matthes (Ziz)
+
+Starting:
+Just do with super user rights:
+./cofis.py mnt
+where mnt is the root-folder of our new FUSE-Filesystem.
+
+Config:
+There are a few constants in the cofis.py you can change:
+
+NODE_COUNT - Count of Nodes
+NODE_PRAEFIX - The beginning of the clusternames. Used for the ssh-sessions
+cpuCount - "Real" CPUs per Node. Necessary for the temperature-files.
+sdaCount - Count of non-swap partitions per node
+
+
+
